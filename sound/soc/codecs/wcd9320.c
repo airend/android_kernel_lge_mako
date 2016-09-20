@@ -113,7 +113,7 @@ static const DECLARE_TLV_DB_SCALE(digital_gain, 0, 1, 0);
 static const DECLARE_TLV_DB_SCALE(line_gain, 0, 7, 1);
 static const DECLARE_TLV_DB_SCALE(analog_gain, 0, 25, 1);
 static struct snd_soc_dai_driver taiko_dai[];
-static const DECLARE_TLV_DB_SCALE(aux_pga_gain, 0, 2, 0);
+//static const DECLARE_TLV_DB_SCALE(aux_pga_gain, 0, 2, 0);
 
 enum taiko_bandgap_type {
 	TAIKO_BANDGAP_OFF = 0,
@@ -846,10 +846,12 @@ static int taiko_config_compander(struct snd_soc_dapm_widget *w,
 	return 0;
 }
 
+#if 0
 static const char * const taiko_ear_pa_gain_text[] = {"POS_6_DB", "POS_2_DB"};
 static const struct soc_enum taiko_ear_pa_gain_enum[] = {
 		SOC_ENUM_SINGLE_EXT(2, taiko_ear_pa_gain_text),
 };
+#endif
 
 /*cut of frequency for high pass filter*/
 static const char * const cf_text[] = {
