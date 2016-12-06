@@ -112,6 +112,7 @@ static const v_U8_t
 ANI_ETH_P_EAPOL_BYTES[2] = {0x00, 0x03};//BT-AMP security type{0x88, 0x8e};
 static const v_U8_t 
 EAPOL_VERSION_BYTES[1] = {EAPOL_VERSION_1};
+#if 0
 static const v_U8_t 
 ANI_EAPOL_TYPE_PACKET_BYTES[1] = {ANI_EAPOL_TYPE_PACKET};
 static const v_U8_t 
@@ -122,6 +123,7 @@ static const v_U8_t
 ANI_EAPOL_TYPE_KEY_BYTES[1] = {ANI_EAPOL_TYPE_KEY};
 static const v_U8_t 
 ANI_EAPOL_TYPE_ASF_ALERT_BYTES[1] = {ANI_EAPOL_TYPE_ASF_ALERT};
+#endif
 static const v_U8_t 
 ZERO_BYTES[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 static v_U8_t BAP_RSN_LLC_HEADER[] =  {0xAA, 0xAA, 0x03, 0x00, 0x19, 0x58 };

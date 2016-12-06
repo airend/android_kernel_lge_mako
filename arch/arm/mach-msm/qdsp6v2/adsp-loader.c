@@ -186,12 +186,13 @@ static int adsp_loader_remove(struct platform_device *pdev)
 	return 0;
 }
 
-
+#if defined(CONFIG_OF)
 static const struct of_device_id adsp_loader_dt_match[] = {
 	{ .compatible = "qcom,adsp-loader" },
 	{ }
 };
 MODULE_DEVICE_TABLE(of, adsp_loader_dt_match);
+#endif
 
 static struct platform_driver adsp_loader_driver = {
 	.driver = {

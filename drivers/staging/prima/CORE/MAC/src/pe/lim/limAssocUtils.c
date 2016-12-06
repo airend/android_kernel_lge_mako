@@ -3462,8 +3462,8 @@ tSirRetStatus limStaSendAddBssPreAssoc( tpAniSirGlobal pMac, tANI_U8 updateEntry
 
     if(pMac->lim.gLimProtectionControl != WNI_CFG_FORCE_POLICY_PROTECTION_DISABLE)
         limDecideStaProtectionOnAssoc(pMac, pBeaconStruct, psessionEntry);
-        palCopyMemory( pMac->hHdd,  pAddBssParams->bssId,bssDescription->bssId,
-                   sizeof( tSirMacAddr ));
+    palCopyMemory( pMac->hHdd,  pAddBssParams->bssId,bssDescription->bssId,
+               sizeof( tSirMacAddr ));
 
     // Fill in tAddBssParams selfMacAddr
     palCopyMemory( pMac->hHdd,  pAddBssParams->selfMacAddr, 
